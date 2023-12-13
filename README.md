@@ -1,4 +1,4 @@
-Mastek assignment for online bookstore using Java 11+, Spring Boot, and PostgreSQL.
+Online bookstore using Java 11+, Spring Boot, and PostgreSQL.
 
 Please refer following details to set up project and api endpoints usasge - 
 
