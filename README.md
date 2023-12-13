@@ -9,11 +9,10 @@ server.servlet.context-path=/book-store
 
 ** Postgresql db set up 
 1. Added dependency for postgresql in pom.xml-
-
 <dependency>
-			<groupId>org.postgresql</groupId>
-			<artifactId>postgresql</artifactId>
-			<scope>runtime</scope>
+<groupId>org.postgresql</groupId>
+<artifactId>postgresql</artifactId>
+<scope>runtime</scope>
 </dependency>
 
 2. Downloaded pgadmin 4 desktop for postgresql desktop
