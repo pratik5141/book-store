@@ -15,20 +15,34 @@ public class Book {
 	@Column(name = "ID")
 	private Integer id;
 
-	@Column(name = "TITLE")
+	@Column(name = "TITLE", nullable =  false)
 	private String title;
 
-	@Column(name = "AUTHOR")
+	@Column(name = "AUTHOR",  nullable =  false)
 	private String author;
 	
-	@Column(name = "ISBN")
+	@Column(name = "ISBN",  nullable =  false)
 	private String ISBN;
 
-	@Column(name = "PUBLISHED_DATE")
+	@Column(name = "PUBLISHED_DATE",  nullable =  false)
 	private Date publishedDate;
 
-	@Column(name = "GENRE")
+	@Column(name = "GENRE",  nullable =  false)
 	private String genre;
+	
+	public Book() {
+		super();
+	}
+
+	public Book(Integer id, String title, String author, String iSBN, Date publishedDate, String genre) {
+		super();
+		this.id = id;
+		this.title = title;
+		this.author = author;
+		ISBN = iSBN;
+		this.publishedDate = publishedDate;
+		this.genre = genre;
+	}
 
 	public Integer getId() {
 		return id;
