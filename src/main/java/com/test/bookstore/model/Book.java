@@ -15,19 +15,19 @@ public class Book {
 	@Column(name = "ID")
 	private Integer id;
 
-	@Column(name = "TITLE", nullable =  false)
+	@Column(name = "TITLE")
 	private String title;
 
-	@Column(name = "AUTHOR",  nullable =  false)
+	@Column(name = "AUTHOR")
 	private String author;
 	
-	@Column(name = "ISBN",  nullable =  false)
+	@Column(name = "ISBN")
 	private String ISBN;
 
-	@Column(name = "PUBLISHED_DATE",  nullable =  false)
+	@Column(name = "PUBLISHED_DATE")
 	private Date publishedDate;
 
-	@Column(name = "GENRE",  nullable =  false)
+	@Column(name = "GENRE")
 	private String genre;
 	
 	public Book() {
