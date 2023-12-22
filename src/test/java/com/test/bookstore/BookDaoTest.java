@@ -23,7 +23,7 @@ import com.test.bookstore.model.Book;
 
 //@SpringBootTest
 @ExtendWith(MockitoExtension.class)
-@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
+//@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class BookDaoTest {
 
 	// @Autowired
@@ -33,8 +33,8 @@ public class BookDaoTest {
 	int id = 100;
 
 	@Test
-	@Order(1)
-	@Rollback(value = false)
+	//@Order(1)
+	//@Rollback(value = false)
 	public void saveBookTest() {
 		Book book = new Book(id, "TestBook", "Tester", "98983560923", new Date(), "test");
 		bookDao.saveBook(book);
@@ -43,7 +43,7 @@ public class BookDaoTest {
 	}
 
 	@Test
-	@Order(2)
+	//@Order(2)
 	public void getEmployeeTest() {
 		Book dummyBook = new Book(id, "TestBook", "Tester", "98983560923", new Date(), "test");
 		when(bookDao.getBookById(id)).thenReturn(dummyBook);
@@ -54,7 +54,7 @@ public class BookDaoTest {
 	}
 
 	@Test
-	@Order(3)
+	//@Order(3)
 	public void getListOfEmployeesTest() {
 
 		List<Book> dummyList = new ArrayList<>();
@@ -67,8 +67,8 @@ public class BookDaoTest {
 	}
 
 	@Test
-	@Order(4)
-	@Rollback(value = false)
+	//@Order(4)
+	//@Rollback(value = false)
 	public void updateEmployeeTest() {
 
 		Book dummyBook = new Book(id, "TestBook", "Tester", "98983560923", new Date(), "test");
@@ -85,8 +85,8 @@ public class BookDaoTest {
 	}
 
 	@Test
-	@Order(5)
-	@Rollback(value = false)
+	//@Order(5)
+	//@Rollback(value = false)
 	public void deleteEmployeeTest() {
 
 		Book book = bookDao.getBookById(id);
